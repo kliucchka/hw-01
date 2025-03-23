@@ -1,0 +1,131 @@
+/* Підключення шрифтів */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Контейнер для центрування контенту */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Хедер */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    height: auto;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.nav__link:hover {
+    color: #f8f9fa;
+}
+
+/* Основний контент */
+main {
+    background-color: white;
+    padding: 40px 0;
+}
+
+/* Секції */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+/* Список послуг */
+.services__list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.services__list li {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Футер */
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .nav__list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services__list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+}
